@@ -7,7 +7,7 @@ import bg from '/public/slowed-spiraling.gif'
 function Home() {
 
   return (
-    <div className=".backgroundImage-trippy">
+    <div className='bg-[url("../public/slowed-spiraling.gif")] h-screen bg-cover bg-center'>
       {/* <Image
         src={bg}
         alt="trippy spiral background"
