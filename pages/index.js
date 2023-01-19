@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar.jsx';
+import HamburgerButton from '../components/HamburgerButton.jsx'
 import Image from 'next/image'
 import bg from '/public/slowed-spiraling.gif'
 
@@ -22,6 +23,7 @@ function Home() {
       <h1 className="py-16">Hello, there! Welcome to my project!</h1>
       <h1 className="py-16">Hello, there! Welcome to my project!</h1>
       <h1 className="py-16">Hello, there! Welcome to my project!</h1> */}
+      <HamburgerButton />
       <Navbar />
     </div>
 
