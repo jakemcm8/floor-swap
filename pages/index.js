@@ -21,24 +21,16 @@ function Home() {
         alt="trippy spiral background"
         className="w-screen"
       /> */}
-      {/* <h1 className="py-16">Hello, there! Welcome to my project!</h1>
-      <h1 className="py-16">Hello, there! Welcome to my project!</h1>
-      <h1 className="py-16">Hello, there! Welcome to my project!</h1>
-      <h1 className="py-16">Hello, there! Welcome to my project!</h1>
-      <h1 className="py-16">Hello, there! Welcome to my project!</h1>
-      <h1 className="py-16">Hello, there! Welcome to my project!</h1>
-      <h1 className="py-16">Hello, there! Welcome to my project!</h1>
-      <h1 className="py-16">Hello, there! Welcome to my project!</h1>
-      <h1 className="py-16">Hello, there! Welcome to my project!</h1> */}
 
       {/* If isClosed is false, render Popout. If true, render Hamburger */}
       {/* If (X) is pressed in the Popout, isClosed changes to true */}
       {/* isClosed is changed in HamburgerButton when the icon is clicked on */}
 
       {isClosed ? <HamburgerButton makeOpen={changeState} /> : <Popout makeClosed={setIsClosed} />}
+      <Navbar />
 
       {/* <HamburgerButton makeOpen={changeState} /> */}
-      <Navbar />
+
     </div>
 
   );
