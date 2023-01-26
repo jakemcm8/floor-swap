@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import Image from 'next/image'
+
 import Navbar from '../components/Navbar.jsx';
 import HamburgerButton from '../components/HamburgerButton.jsx'
 import Popout from '../components/Popout.jsx'
-import Image from 'next/image'
+import Scrollbar from '../components/ImgScrollbar.jsx'
 import bg from '/public/slowed-spiraling.gif'
 
 
@@ -29,8 +31,7 @@ function Home() {
 
       {isClosed ? <HamburgerButton makeOpen={changeState} /> : <><Popout makeClosed={setIsClosed} /> <HamburgerButton className="hidden"/> </>}
       <Navbar />
-
-      {/* <HamburgerButton makeOpen={changeState} /> */}
+      <Scrollbar />
 
     </div>
 
