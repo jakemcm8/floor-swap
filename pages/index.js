@@ -22,11 +22,12 @@ function Home() {
         className="w-screen"
       /> */}
 
-      {/* If isClosed is false, render Popout. If true, render Hamburger */}
+      {/* If isClosed is false, render Popout and hidden HamButton. If true, render Button*/}
       {/* If (X) is pressed in the Popout, isClosed changes to true */}
       {/* isClosed is changed in HamburgerButton when the icon is clicked on */}
 
-      {isClosed ? <HamburgerButton makeOpen={changeState} /> : <Popout makeClosed={setIsClosed} />}
+
+      {isClosed ? <HamburgerButton makeOpen={changeState} /> : <><Popout makeClosed={setIsClosed} /> <HamburgerButton className="hidden"/> </>}
       <Navbar />
 
       {/* <HamburgerButton makeOpen={changeState} /> */}
