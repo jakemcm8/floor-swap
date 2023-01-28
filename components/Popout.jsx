@@ -9,7 +9,7 @@ export default function Popout (props) {
 
   return (
     <div className="fixed block bg-red-500 h-screen w-64 top-0">
-      <img src="/close-icon.png" onClick={close} className="static right-0"/>
+      <img src="/close-icon.png" onClick={close} className='absolute right-0'/>
       <div className="flex flex-col font-bold text-2xl">
         <Link href="/docs" className="pt-4 pb-6">Docs</Link>
         <Link href="/about" className="py-6">About</Link>
