@@ -10,7 +10,7 @@ export default function Hamburger (props) {
   return (
     <div className="pl-2 pt-2">
       <button onClick={changeState} className="fixed bg-white rounded-lg bg-opacity-70">
-        <img src="/hamburger-menu.png"></img>
+        <img src="/icons/hamburger-menu.png"></img>
       </button>
     </div>
   )

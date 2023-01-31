@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar.jsx';
 import HamburgerButton from '../components/HamburgerButton.jsx'
 import Popout from '../components/Popout.jsx'
 import Scrollbar from '../components/ImgScrollbar.jsx'
-import bg from '/public/slowed-spiraling.gif'
 
 
 function Home() {
@@ -17,7 +16,7 @@ function Home() {
   }
 
   return (
-    <div className='bg-[url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-screen w-screen bg-cover bg-center font-mono'>
+    <div className='bg-[url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] bg-fixed h-screen w-screen bg-cover bg-center font-mono'>
       {/* <Image
         src={bg}
         alt="trippy spiral background"
