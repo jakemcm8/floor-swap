@@ -12,7 +12,7 @@ function Home() {
 
   const [isClosed, setIsClosed] = useState(true);
 
-  function changeState () {
+  function makeOpen () {
     setIsClosed(false);
   }
 
@@ -29,7 +29,7 @@ function Home() {
       {/* isClosed is changed in HamburgerButton when the icon is clicked on */}
 
 
-      {isClosed ? <HamburgerButton makeOpen={changeState} /> : <><Popout makeClosed={setIsClosed} /> <HamburgerButton className="hidden"/> </>}
+      {isClosed ? <HamburgerButton makeOpen={makeOpen}/> : <><Popout makeClosed={setIsClosed} /></>}
       <Navbar />
       <Scrollbar />
 

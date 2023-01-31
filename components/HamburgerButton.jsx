@@ -8,8 +8,10 @@ export default function Hamburger (props) {
   }
 
   return (
-    <button onClick={changeState} className="">
-      <img src="/hamburger-menu.png"></img>
-    </button>
+    <div className="pl-2 pt-2">
+      <button onClick={changeState} className="fixed bg-white rounded-lg bg-opacity-70">
+        <img src="/hamburger-menu.png"></img>
+      </button>
+    </div>
   )
 }
