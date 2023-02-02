@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import ImgScrollbar from '../components/ImgScrollbar.jsx'
 
 export default function Portfolio () {
   return (
@@ -8,7 +7,6 @@ export default function Portfolio () {
         <h1 className="text-white">Filler</h1>
       </div>
       <Link href="/" className="text-3xl text-indigo-600 font-mono font-extrabold hover:drop-shadow-lg hover:underline hover:underline-offset-4">Home</Link>
-      {/* <ImgScrollbar /> */}
 
     </div>
   )

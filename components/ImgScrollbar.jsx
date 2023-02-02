@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Scrollbar () {
   return (
-    <div className="grid grid-cols-3 overflow-auto">
+    <div className="grid grid-cols-3">
       <Image src="/nfts/mil_1001.jpeg"
         className="p-2"
         height="500"
