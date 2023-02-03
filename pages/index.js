@@ -18,7 +18,7 @@ function Home() {
 
   return (
 
-    <div className='bg-[url("../public/backgrounds/spink_splatter.png")] bg-cover bg-repeat-space h-full w-full font-mono'>
+    <div className='bg-[url("../public/backgrounds/spink_splatter.png")] fixed bg-cover overflow-auto h-full w-full font-mono'>
 
 
       {/* If isClosed is false, render Popout and hidden HamButton. If true, render Button*/}

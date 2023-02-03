@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Portfolio () {
   return (
-    <div className='bg-[url("../public/backgrounds/spink_splatter.png")] fixed bg-cover bg-repeat-space h-full w-full font-mono overflow-auto'>
+    <div className='bg-[url("../public/backgrounds/green_splatter.png")] fixed bg-cover overflow-auto h-full w-full font-mono'>
       <div>
         <h1 className="text-white">Filler</h1>
       </div>

@@ -2,6 +2,9 @@ import Image from 'next/image'
 
 export default function Scrollbar () {
   return (
+
+    // Eventually add function for choosing images to display e.g. from a json file
+
     <div className="grid grid-cols-3">
       <Image src="/nfts/mil_1001.jpeg"
         className="p-2"
