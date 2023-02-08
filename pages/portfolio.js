@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+
 import ImgScrollbar from '../components/ImgScrollbar.jsx'
+import ProfilePortColumn from '../components/ProfilePortColumn.jsx'
 
 export default function Portfolio () {
   return (
@@ -11,21 +13,8 @@ export default function Portfolio () {
         <div className="text-4xl py-16 text-white flex-none">
           <h1> (0x223...121)'s Portfolio</h1>
         </div>
-        <div className="flex-auto text-white rounded-lg bg-gray-600 w-1/3 h-48 fixed right-0 mr-16 mt-24">
-          <h1 className="">Filler</h1>
-          <p></p>
-        </div>
+        <ProfilePortColumn />
       </div>
-      <div className="">
-        <Image
-          src="/icons/default-avatar-icon-of-social-media-user-vector.jpg"
-          alt="default pfp"
-          className="rounded-full fixed right-0 top-0 mr-20 mt-[80px]"
-          width={100}
-          height={100}
-        />
-      </div>
-
     </div>
   )
 }
