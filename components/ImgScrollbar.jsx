@@ -5,7 +5,7 @@ export default function Scrollbar () {
 
     // Eventually add function for choosing images to display e.g. from a json file
 
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-3 mt-32">
       <Image src="/nfts/mil_1001.jpeg"
         className="p-2"
         height="500"

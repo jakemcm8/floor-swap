@@ -24,10 +24,12 @@ function Home() {
       {/* If isClosed is false, render Popout and hidden HamButton. If true, render Button*/}
       {/* If (X) is pressed in the Popout, isClosed changes to true */}
       {/* isClosed is changed in HamburgerButton when the icon is clicked on */}
-
+      <div className="bg-black opacity-80 fixed w-full">
+        <Navbar />
+      </div>
       <ProfileButton />
       {isClosed ? <HamburgerButton makeOpen={makeOpen}/> : <><Popout makeClosed={setIsClosed} /></>}
-      <Navbar />
+
       <Scrollbar />
 
     </div>
