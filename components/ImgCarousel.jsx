@@ -1,47 +1,47 @@
+import React, { useState } from 'react';
 import Image from 'next/image'
-import { useState } from 'react'
 
-const ImgCarousel = ({images}) => {
-
-
+const ImageCarousel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const handleNext = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % images.length);
-  }
+  const handlePrevClick = () => {
+    setCurrentImageIndex((currentImageIndex + images.length - 1) % images.length);
+  };
 
-  const handlePrev = () => {
-    setCurrentImageIndex((currentImageIndex + images.length - 1) % images.length)
-  }
+  const handleNextClick = () => {
+    setCurrentImageIndex((currentImageIndex + 1) % images.length);
+  };
 
   return (
     <div className="relative">
       <button
-        className=""
-        onClick="{handlePrev}"
+        className="absolute top-0 left-0 -ml-10 -mt-10 p-2 rounded-full bg-white hover:bg-gray-200 focus:outline-none"
+        onClick={handlePrevClick}
       >
-      Prev
+        Prev
       </button>
-        <button
-          className=""
-          onClick="{handleNext}"
-        >
+      <button
+        className="absolute top-0 right-0 -mr-10 -mt-10 p-2 rounded-full bg-white hover:bg-gray-200 focus:outline-none"
+        onClick={handleNextClick}
+      >
         Next
       </button>
       <div className="overflow-hidden">
         <div className="flex items-center">
-          {images.slice(currentImageIndex, currentImageIndex + 3).map((image, index) => {
-            <Image/
-              className=""
-              src={image}
+          {images.slice(currentImageIndex, currentImageIndex + 3).map((image, index) => (
+            <Image
               key={index}
-              alt="Carousel Image"
-            >
-          })}
+              className="w-full h-full max-h-96 mr-2"
+              src={image}
+              alt="Carousel image"
+              height="500"
+              width="500"
+            />
+          ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ImgCarousel;
+export default ImageCarousel;

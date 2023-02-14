@@ -6,9 +6,24 @@ import HamburgerButton from '../components/HamburgerButton.jsx'
 import Popout from '../components/Popout.jsx'
 import Scrollbar from '../components/ImgScrollbar.jsx'
 import ProfileButton from '../components/ProfileButton.jsx'
+import ImgCarousel from '../components/ImgCarousel.jsx'
+
 
 
 function Home() {
+
+  const images = [
+    "/nfts/mil_1001.jpeg",
+    "/nfts/milady_2050.jpeg",
+    "/nfts/radbro_501.jpeg",
+    "/nfts/remilio_927.jpeg",
+    "/nfts/remilio_1120.jpeg",
+    "/nfts/remilio_9228.jpeg",
+    "/nfts/milady_4070.jpeg",
+    "/nfts/radbro_1255.jpeg",
+    "/nfts/milady_3204.jpeg",
+    "/nfts/milady_7654.jpeg"
+  ]
 
   const [isClosed, setIsClosed] = useState(true);
 
@@ -30,7 +45,9 @@ function Home() {
       <ProfileButton />
       {isClosed ? <HamburgerButton makeOpen={makeOpen}/> : <><Popout makeClosed={setIsClosed} /></>}
 
-      <Scrollbar />
+      <div className="container mx-auto">
+        <ImgCarousel images={images}/>
+      </div>
 
     </div>
 
