@@ -39,16 +39,16 @@ function Home() {
       {/* If isClosed is false, render Popout and hidden HamButton. If true, render Button*/}
       {/* If (X) is pressed in the Popout, isClosed changes to true */}
       {/* isClosed is changed in HamburgerButton when the icon is clicked on */}
-      <div className="bg-black opacity-80 fixed w-full">
+      <div className="bg-black bg-opacity-[0.83] fixed w-full">
         <Navbar />
       </div>
       <ProfileButton />
-      {isClosed ? <HamburgerButton makeOpen={makeOpen}/> : <><Popout makeClosed={setIsClosed} /></>}
+
 
       <div className="container relative mx-auto mt-60">
         <ImgCarousel images={images}/>
       </div>
-
+      {isClosed ? <HamburgerButton makeOpen={makeOpen}/> : <><Popout makeClosed={setIsClosed} /></>}
     </div>
 
 

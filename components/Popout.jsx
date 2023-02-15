@@ -21,7 +21,7 @@ export default function Popout (props) {
           <Link href="/careers" className="py-6 px-8 hover:bg-gray-200 rounded-lg">Careers</Link>
         </div>
         <div className="py-6 px-4">
-          <Link href="https://substack.com/" className="py-6 px-4 hover:bg-gray-200 rounded-lg">Blog</Link>
+          <Link href="https://substack.com/" className="py-6 px-8 hover:bg-gray-200 rounded-lg">Blog</Link>
         </div>
       </div>
     </div>
