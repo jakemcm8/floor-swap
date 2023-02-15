@@ -31,7 +31,7 @@ const ImageCarousel = ({ images }) => {
           {images.slice(currentImageIndex, currentImageIndex + 3).map((image, index) => (
             <Image
               key={index}
-              className="w-full h-full max-h-96 mr-2"
+              className="w-full h-full max-h-96 mr-2 hover:scale-125 last:mr-0"
               src={image}
               alt="Carousel image"
               height="500"
