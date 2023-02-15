@@ -46,7 +46,7 @@ function Home() {
       {isClosed ? <HamburgerButton makeOpen={makeOpen}/> : <><Popout makeClosed={setIsClosed} /></>}
 
       <div className="container relative mx-auto mt-60">
-        <ImgCarousel images={images}/>
+        <ImgCarousel images={images} className="z-100"/>
       </div>
 
     </div>
