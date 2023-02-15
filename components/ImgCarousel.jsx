@@ -15,13 +15,13 @@ const ImageCarousel = ({ images }) => {
   return (
     <div className="relative">
       <button
-        className="absolute top-0 left-0 -ml-10 -mt-10 p-2 rounded-full bg-white hover:bg-gray-200 focus:outline-none"
+        className="absolute top-1/2 left-0 -ml-10 -mt-10 p-2 rounded-full bg-white hover:bg-gray-200 focus:outline-none"
         onClick={handlePrevClick}
       >
         Prev
       </button>
       <button
-        className="absolute top-0 right-0 -mr-10 -mt-10 p-2 rounded-full bg-white hover:bg-gray-200 focus:outline-none"
+        className="absolute top-1/2 right-0 -mr-10 -mt-10 p-2 rounded-full bg-white hover:bg-gray-200 focus:outline-none"
         onClick={handleNextClick}
       >
         Next
