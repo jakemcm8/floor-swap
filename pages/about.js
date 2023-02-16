@@ -1,8 +1,10 @@
 import Link from 'next/link'
+import LogoButton from '../components/LogoButton.jsx'
 
 export default function About() {
   return (
     <div className='bg-[url("../public/backgrounds/blue_splatter.png")] fixed bg-cover overflow-auto h-full w-full font-mono'>
+      <LogoButton />
       <div>
         <Link href="/" className="text-3xl text-indigo-600 font-mono font-extrabold hover:drop-shadow-lg hover:underline hover:underline-offset-4">Home</Link>
       </div>

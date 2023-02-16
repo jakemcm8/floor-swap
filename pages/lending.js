@@ -1,5 +1,5 @@
-import Link from 'next/link
-import LogoButton from '../components/LogoButton.jsx''
+import Link from 'next/link'
+import LogoButton from '../components/LogoButton.jsx'
 
 export default function Lending () {
   return (

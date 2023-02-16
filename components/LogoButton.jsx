@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 const LogoButton = () => {
   return (
-    <div className="absolute top-0 right-1/2 z-10">
-      <Link href="/" legacyBehavior>
+    <div className="fixed flex justify-center w-full z-10 mt-1">
+      <Link href="/">
         <div className="inline-block">
           <Image
             src="/icons/logo_2.png"
