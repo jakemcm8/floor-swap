@@ -7,6 +7,7 @@ import Popout from '../components/Popout.jsx'
 import Scrollbar from '../components/ImgScrollbar.jsx'
 import ProfileButton from '../components/ProfileButton.jsx'
 import ImgCarousel from '../components/ImgCarousel.jsx'
+import LogoButton from '../components/LogoButton.jsx'
 
 
 
@@ -39,7 +40,8 @@ function Home() {
       {/* If isClosed is false, render Popout and hidden HamButton. If true, render Button*/}
       {/* If (X) is pressed in the Popout, isClosed changes to true */}
       {/* isClosed is changed in HamburgerButton when the icon is clicked on */}
-      <div className="bg-black bg-opacity-[0.83] fixed w-full">
+      <LogoButton />
+      <div className="bg-black bg-opacity-[0.83] fixed w-full pt-8">
         <Navbar />
       </div>
       <ProfileButton />
