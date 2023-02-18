@@ -8,7 +8,7 @@ export default function Popout (props) {
   }
 
   return (
-    <div className="fixed block bg-white h-screen w-64 top-0 ">
+    <div className="fixed block bg-white h-screen w-64 top-0">
       <img src="/icons/close-icon.png" onClick={close} className='absolute right-4 top-1 hover:bg-gray-200 hover:rounded-lg'/>
       <div className="flex flex-col font-bold text-2xl">
         <div className="pt-12 pb-6 px-4">

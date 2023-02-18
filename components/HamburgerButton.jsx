@@ -8,7 +8,7 @@ export default function Hamburger (props) {
   }
 
   return (
-    <div className="pl-2 pt-2 mt-2 ml-2 absolute top-0">
+    <div className="pl-2 pt-2 mt-2 ml-2 absolute top-0 z-10">
       <button onClick={changeState} className="fixed bg-white rounded-lg bg-opacity-70 hover:bg-gray-400 hover:scale-[1.07]">
         <img src="/icons/hamburger-menu.png"></img>
       </button>

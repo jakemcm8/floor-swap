@@ -40,10 +40,11 @@ function Home() {
       {/* If isClosed is false, render Popout and hidden HamButton. If true, render Button*/}
       {/* If (X) is pressed in the Popout, isClosed changes to true */}
       {/* isClosed is changed in HamburgerButton when the icon is clicked on */}
-      <LogoButton />
-      <div className="bg-black bg-opacity-[0.83] fixed w-full pt-8">
+
+      <div className="bg-black bg-opacity-[0.83] fixed w-full py-8">
         <Navbar />
       </div>
+      <LogoButton />
       <ProfileButton />
 
 
