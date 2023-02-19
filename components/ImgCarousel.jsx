@@ -26,12 +26,12 @@ const ImageCarousel = ({ images }) => {
       >
         Next
       </button>
-      <div className="overflow-hidden">
-        <div className="flex items-center">
+      <div className="overflow-visible">
+        <div className="flex items-center overflow-visible">
           {images.slice(currentImageIndex, currentImageIndex + 3).map((image, index) => (
             <Image
               key={index}
-              className="w-full h-full max-h-96 mr-2 hover:scale-125 last:mr-0"
+              className="w-full h-full max-h-96 mr-2 hover:scale-[1.03] last:mr-0"
               src={image}
               alt="Carousel image"
               height="500"
